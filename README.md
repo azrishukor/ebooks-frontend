@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -14,3 +15,6 @@ Currently, two official plugins are available:
 =======
 # eBooks-assignment
 >>>>>>> 7383465275653c3f70407fe94508d1ddcca6aed5
+=======
+# ebooks-frontend
+>>>>>>> edd1424fe434c011751ff2025f63022a053c5b4e
