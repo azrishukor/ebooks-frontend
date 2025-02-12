@@ -4,6 +4,14 @@ import Home from "./pages/Home";
 import AddBook from "./pages/AddBook";
 import EditBook from "./pages/EditBook";
 import Navbar from "./Navbar";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:3000";
+
+console.log("API Base URL:", API_BASE_URL); // Debugging
+
+fetch(`${API_BASE_URL}/books`)
+  .then(response => response.json())
+  .then(data => console.log(data));
+
 
 function App() {
   return (
