@@ -1,5 +1,4 @@
-//import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import AddBook from "./pages/AddBook";
 import EditBook from "./pages/EditBook";
@@ -15,7 +14,7 @@ fetch(`${API_BASE_URL}/books`)
 
 function App() {
   return (
-    <BrowserRouter> {/* ✅ Use BrowserRouter instead of Router */}
+    <Router>  {/* Ensure BrowserRouter is correctly used as Router */}
       <Navbar />
       <div className="container mt-4">
         <Routes>
@@ -24,7 +23,7 @@ function App() {
           <Route path="/edit/:id" element={<EditBook />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 
