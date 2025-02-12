@@ -10,4 +10,8 @@ VITE_API_BASE_URL="https://ebooks-backend-production.up.railway.app"
 
 export default defineConfig({
   plugins: [react()],
-})
+  define: {
+    'process.env': process.env // Fix for Vercel
+  }
+});
+
